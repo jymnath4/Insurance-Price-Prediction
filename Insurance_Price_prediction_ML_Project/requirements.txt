@@ -7,7 +7,7 @@ Werkzeug==0.15.5
 numpy>=1.9.2
 matplotlib>=1.4.3
 pandas>=0.19
-seaborn>=1
+seaborn=0.11.2
 missingno>=1
 pickle>=1
 os>=1
