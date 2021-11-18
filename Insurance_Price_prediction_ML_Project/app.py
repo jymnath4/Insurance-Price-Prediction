@@ -16,7 +16,7 @@ app= Flask(__name__)
 def index():
     return render_template('home.html')
 
-@app.route("/result",methods=['POST','GET'])
+@app.route("/result",methods=['POST'])
 def result():
     sex=int(request.form['sex'])
     age=int(request.form['age'])
@@ -39,7 +39,7 @@ def result():
 
     Y_pred=dt.predict(x)
 
-    # for insurance orice prediction
+    # for insurance price prediction
     print(Y_pred)
 
 if __name__=="__main__":
