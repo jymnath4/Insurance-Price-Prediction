@@ -16,7 +16,7 @@ app= Flask(__name__)
 def index():
     return render_template("home.html")
 
-@app.route("/result",methods=['POST','GET'])
+@app.route("/result",methods=['POST'])
 def result():
     sex=int(request.form['sex'])
     age=int(request.form['age'])
